@@ -1,5 +1,8 @@
 # Tokyoletes
 
+
+![Demo](./assets/demo.gif)
+
 ## Tools:
 * React
 * Apollo GraphQL Server
