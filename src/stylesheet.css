@@ -1,0 +1,96 @@
+
+.main{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.Header{
+  height:7vh;
+}
+
+.Footer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:15vh;
+  background-color: #90009f;
+  font-size: 2vh;
+  color:darkgray
+}
+.content{
+  color: antiquewhite;
+}
+
+
+
+.box {
+  background: linear-gradient(80deg, #f3efef, #90009f, #01060d);
+  background-size: 600% 600%;
+  animation: AnimationName 29s ease infinite;
+}
+
+@keyframes AnimationName { 
+  0%{background-position:0% 51%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 51%}
+}
+
+.buttonPane{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.flex-item{
+  margin:2vh
+}
+
+.buttonSection{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.parameterBox{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.parameter{
+  margin: 2vh;
+  width:100%;
+}
+
+
+p, h2{
+  color:antiquewhite
+}
+
+.tableFrame{
+  max-height: 50vh;
+  min-width:40vh;
+  overflow-y: scroll;
+  margin-top: 3vh;
+}
+.tableBody{
+ 
+ 
+  border-color: #90009f;
+}
+
+tr{
+  background-color:rgb(118, 33, 175)
+}
+
+
+.backButton{
+  position:relative;
+  bottom:7vh;
+  right:60vh
+}
