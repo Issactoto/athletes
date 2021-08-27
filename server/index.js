@@ -1,6 +1,7 @@
 const {ApolloServer, gql} = require('apollo-server');
 const fs = require('fs')
 var csv = require('csv-parse')
+const express = require('express');
 
 
 const inputPath = './data.csv'
@@ -97,7 +98,15 @@ async function getData(){
   
 async function startServer(){
   const server = new ApolloServer({ typeDefs, resolvers , cors:true});
-  server.listen().then(({ url }) => {
+  if(process.env.NODE_ENV ==='production'){
+    const app = express();
+    app.use(express.static('build'));
+    app.get('*',(req,res)=>{
+      res.sendFile(path.resolve(__dirname,'build','index.html'));
+    });
+  server.applyMiddleware({ app });
+  }
+  server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
     console.log(`🚀  Server ready at ${url}`);
   });
 }
