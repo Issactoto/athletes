@@ -1,10 +1,10 @@
 # Tokyoletes
 
 ## Tools:
-> React
-> Apollo GraphQL Server
-> Apollo GraphQL Client
-> Data provided by Kaggle
+* React
+* Apollo GraphQL Server
+* Apollo GraphQL Client
+* Data provided by Kaggle
 
 ## Run locally:
 ```
