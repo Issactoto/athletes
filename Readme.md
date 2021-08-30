@@ -1,8 +1,8 @@
 # Tokyoletes
 
-<div style="text-align:center">
+<p align="center">
 <img src="./assets/demo.gif" backgroundColor= white width=50%/>  
-</div>
+</p>
 ## Tools:
 * React
 * Apollo GraphQL Server
